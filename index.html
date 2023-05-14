@@ -42,6 +42,22 @@
 	</style>
 </head>
 <body>
+	<audio id="audio-player" src="Musiquita.mp3"></audio>
+  	<button id="play-button">Reproducir</button>
+    <script>
+    var audio = document.getElementById("audio-player");
+    var playButton = document.getElementById("play-button");
+    
+    playButton.addEventListener("click", function() {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = "Pausar 𝄞";
+      } else {
+        audio.pause();
+        playButton.innerHTML = "𝄞";
+      }
+    });
+  </script>
 	<div class="background"></div>
 	<h1 class="txtnombres">Mariana y Gustavo</h1>
 	<div class="txtfecha">07/10/2023</div>
