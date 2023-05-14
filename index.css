@@ -61,6 +61,17 @@ img{
 			color: rgb(0, 0, 0);
 			line-height: 1.5;
 		}
+		.txtMontserratterciario{
+			font-size: 20px; /* Tamaño de letra */
+			font-family: 'Montserrat', normal; /* Fuente de letra */
+			text-align: center; /* Alineación del texto */
+			margin-top: 20px; /* Margen superior */
+			margin-bottom: 40px; /* Margen inferior */
+			opacity: 1; /* La opacidad del texto no se modifica */
+			font-weight: bold;
+			color: rgb(0, 0, 0);
+			line-height: 1.5;
+		}
 /* Estilo para la imagen de fondo*/
 		.background {
 			background-image: url("White Green Elegant Wedding Invitation.jpg");
