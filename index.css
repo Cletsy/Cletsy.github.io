@@ -17,7 +17,7 @@ img{
 
 		/* Estilo para el texto de los nombres*/
 		.txtnombres {
-			font-size: 125px; /* Tamaño de letra */
+			font-size: 130px; /* Tamaño de letra */
 			font-family: 'Tangerine', cursive; /* Fuente de letra */
 			text-align: center; /* Alineación del texto */
 			margin-top: 150px; /* Margen superior */
@@ -50,6 +50,17 @@ img{
 			line-height: 1.5;
 		}
 
+.txtMontserratsecund{
+			font-size: 25px; /* Tamaño de letra */
+			font-family: 'Montserrat', normal; /* Fuente de letra */
+			text-align: center; /* Alineación del texto */
+			margin-top: 20px; /* Margen superior */
+			margin-bottom: 35px; /* Margen inferior */
+			opacity: 1; /* La opacidad del texto no se modifica */
+			font-weight: bold;
+			color: rgb(0, 0, 0);
+			line-height: 1.5;
+		}
 /* Estilo para la imagen de fondo*/
 		.background {
 			background-image: url("White Green Elegant Wedding Invitation.jpg");
@@ -69,7 +80,7 @@ img{
 		.btn-confirmar {
 			background-color: rgba(255,255,255,0.6); /* Fondo traslúcido */
 			color: rgb(158, 174, 131); /* Color del texto */
-			font-size: 25px; /* Tamaño de letra */
+			font-size: 20px; /* Tamaño de letra */
 			font-weight: bold; /* Negrita */
 			padding: 20px 50px; /* Padding */
 			border-radius: 35px; /* Bordes redondeados */
