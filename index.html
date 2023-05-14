@@ -1,19 +1,74 @@
-<DOCTYPE html>
-	<html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<title>INVITACION A BODA</title>
-		<link rel="stylesheet" href="index.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>INVITACION A BODA</title>
+	<link rel="stylesheet" href="index.css">
 	<!-- Importamos la fuente "tangeline" & "Montserrat" desde Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	</head>
-	<body>
-		<div class="background"></div>
-		<h1 class="txtnombres">Mariana y Gustavo</h1>
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style>
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.4);
+		}
+		.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #888;
+			border-radius: 10px;
+			width: 60%;
+		}
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+		.close:hover, .close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="background"></div>
+	<h1 class="txtnombres">Mariana y Gustavo</h1>
 	<div class="txtfecha">07/10/2023</div>
 	<div class="txtMontserrat">¡Nos casamos!<br><br>Estancia Las Lilas, Lujan<br>12:00hs</div>
 	<button class="btn-confirmar" style="margin-left: 20vh;" onclick="window.location.href='https://forms.gle/hrEZBGLNh8Ee9JZWA'">CONFIRMAR ASISTENCIA</button></div>
 	<br>
-	<button class="btn-confirmar" style="margin-left: 15vh;">COMO LLEGAR</button><button class="btn-confirmar" style="margin-left: 1cm;">REGALOS</button>
-	</body>
+	<button class="btn-confirmar" style="margin-left: 15vh;" onclick="window.location.href='https://goo.gl/maps/NNpzRmYRwoCQt3EN7'">COMO LLEGAR</button>
+	<button class="btn-confirmar" style="margin-left: 1cm;" onclick="document.getElementById('modal-regalos').style.display='block'">REGALOS</button>
+	
+	<div id="modal-regalos" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="document.getElementById('modal-regalos').style.display='none'">&times;</span>
+			<p> <div class="txtMontserrat"> Si deseas regalarnos algo más que tu hermosa presencia…</div><br>
+				<div class="txtMontserratsecund">CBU: 0150918601000119740160<br>ALIAS: CONDE.FAMA.BARCA<br>CAJA AHORRO ICBC: 0918/01119740/16<br>MARIANA KOHAN</div></p>
+		</div>
+	</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById('modal-regalos');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
