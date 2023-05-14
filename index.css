@@ -80,7 +80,7 @@ img{
 		.btn-confirmar {
 			background-color: rgba(255,255,255,0.6); /* Fondo traslúcido */
 			color: rgb(158, 174, 131); /* Color del texto */
-			font-size: 20px; /* Tamaño de letra */
+			font-size: 25px; /* Tamaño de letra */
 			font-weight: bold; /* Negrita */
 			padding: 20px 50px; /* Padding */
 			border-radius: 35px; /* Bordes redondeados */
