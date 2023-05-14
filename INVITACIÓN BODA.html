@@ -7,6 +7,39 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<style>
 		/* Estilo para el texto principal */
+		.txtnombres {
+			font-size: 90px; /* Tamaño de letra */
+			font-family: 'Tangerine', cursive; /* Fuente de letra */
+			text-align: center; /* Alineación del texto */
+			margin-top: 70px; /* Margen superior */
+			margin-bottom: 50px; /* Margen inferior */
+			opacity: 1; /* La opacidad del texto no se modifica */
+			font-weight: bold;
+			color: rgb(158, 174, 131);
+			line-height: 1.5;
+		}
+		.txtfecha {
+			font-size: 70px; /* Tamaño de letra */
+			font-family: 'Tangerine', cursive; /* Fuente de letra */
+			text-align: center; /* Alineación del texto */
+			margin-top: 20px; /* Margen superior */
+			margin-bottom: 25px; /* Margen inferior */
+			opacity: 1; /* La opacidad del texto no se modifica */
+			font-weight: bold;
+			color: rgb(74, 95, 69);
+			line-height: 1.5;
+		}
+		.txtnoscasamos {
+			font-size: 50px; /* Tamaño de letra */
+			font-family: 'Tangerine', cursive; /* Fuente de letra */
+			text-align: center; /* Alineación del texto */
+			margin-top: 20px; /* Margen superior */
+			margin-bottom: 40px; /* Margen inferior */
+			opacity: 1; /* La opacidad del texto no se modifica */
+			font-weight: bold;
+			color: rgb(74, 95, 69);
+			line-height: 1.5;
+		}
 		.txtprincipal {
 			font-size: 70px; /* Tamaño de letra */
 			font-family: 'Tangerine', cursive; /* Fuente de letra */
@@ -15,7 +48,7 @@
 			margin-bottom: 50px; /* Margen inferior */
 			opacity: 1; /* La opacidad del texto no se modifica */
 			font-weight: bold;
-			color: rgb(0, 0, 128);
+			color: rgb(0, 0, 0);
 			line-height: 1.5;
 		}
 		.txtsecundario {
@@ -26,20 +59,20 @@
 			font-size: 20px; /* Tamaño de letra */
 			font-family: 'Montserrat', normal; /* Fuente de letra */
 			text-align: center; /* Alineación del texto */
-			margin-top: 100px; /* Margen superior */
+			margin-top: 20px; /* Margen superior */
 			margin-bottom: 50px; /* Margen inferior */
 			opacity: 1; /* La opacidad del texto no se modifica */
 			font-weight: bold;
-			color: rgb(0, 0, 128);
+			color: rgb(0, 0, 0);
 			line-height: 1.5;
 		}
 		/* Estilo para el fondo de la página */
 		.background {
-			background-image: url("Lilas1.jpg");
-			background-size: cover;
+			background-image: url("White Green Elegant Wedding Invitation.jpg");
+			background-size: contain;/*cover o contain*/
 			background-position: center;
 			background-repeat: no-repeat;
-			opacity: 0.4; /* Se aplica la opacidad solo al fondo */
+			opacity: 1; /* Se aplica la opacidad solo al fondo */
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -56,11 +89,11 @@
 		/* Estilo para el botón de confirmar asistencia */
 		.btn-confirmar {
 			background-color: rgba(255,255,255,0.6); /* Fondo traslúcido */
-			color: rgb(0, 0, 128); /* Color del texto */
-			font-size: 20px; /* Tamaño de letra */
+			color: rgb(158, 174, 131); /* Color del texto */
+			font-size: 13px; /* Tamaño de letra */
 			font-weight: bold; /* Negrita */
 			padding: 20px 50px; /* Padding */
-			border-radius: 25px; /* Bordes redondeados */
+			border-radius: 35px; /* Bordes redondeados */
 			box-shadow: 3px 3px 8px rgba(0,0,0,0.4); /* Efecto sombra */
 			border: none; /* Sin borde */
 			cursor: pointer; /* Cambiar el cursor al pasar por encima */
@@ -72,11 +105,16 @@
 </head>
 <body>
 	<div class="background"></div>
-	<div class="txtprincipal">Mariana y Gustavo<br>
-	<span class="txtsecundario">07/10/2023</span><br><br>¡Nos casamos!</div>
+	<div class="txtnombres"><br>Mariana y Gustavo
+	<div class="txtfecha">07/10/2023<br></div>
+	<div class="txtMontserrat">¡Nos casamos!</div>
 	<div class="txtMontserrat">Estancia Las Lilas, Lujan<br>12:00hs</div>
 	<div class="btn-container">
-		<button class="btn-confirmar">Confirmar asistencia</button>
-	</div>
+		<button class="btn-confirmar" style="margin-top: 1cm;">CONFIRMAR ASISTENCIA</button>
+		<button class="btn-confirmar" style="margin-right: 1cm;">COMO LLEGAR</button>
+		<button class="btn-confirmar" style="margin-right: 1cm;">REGALOS</button>
+		</div>
 </body>
 </html>
+
+
