@@ -17,7 +17,7 @@ img{
 
 		/* Estilo para el texto de los nombres*/
 		.txtnombres {
-			font-size: 105px; /* Tamaño de letra */
+			font-size: 115px; /* Tamaño de letra */
 			font-family: 'Tangerine', cursive; /* Fuente de letra */
 			text-align: center; /* Alineación del texto */
 			margin-top: 150px; /* Margen superior */
@@ -28,7 +28,7 @@ img{
 			line-height: 1.5;
 		}
 		.txtfecha {
-			font-size: 85px; /* Tamaño de letra */
+			font-size: 95px; /* Tamaño de letra */
 			font-family: 'Tangerine', cursive; /* Fuente de letra */
 			text-align: center; /* Alineación del texto */
 			margin-top: 20px; /* Margen superior */
@@ -39,7 +39,7 @@ img{
 			line-height: 1.5;
 		}
 		.txtMontserrat{
-			font-size: 35px; /* Tamaño de letra */
+			font-size: 45px; /* Tamaño de letra */
 			font-family: 'Montserrat', normal; /* Fuente de letra */
 			text-align: center; /* Alineación del texto */
 			margin-top: 20px; /* Margen superior */
