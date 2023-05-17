@@ -1,91 +1,95 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>INVITACION A BODA</title>
-	<link rel="stylesheet" href="index.css">
-	<!-- Importamos la fuente "tangeline" & "Montserrat" desde Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<style>
-		.modal {
-			display: none;
-			position: fixed;
-			z-index: 1;
-			padding-top: 100px;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			overflow: auto;
-			background-color: rgba(0,0,0,0.4);
-		}
-		.modal-content {
-			background-color: #fefefe;
-			margin: auto;
-			padding: 20px;
-			border: 1px solid #888;
-			border-radius: 35px;
-			width: 60%;
-		}
-		.close {
-			color: #aaaaaa;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-		}
-		.close:hover, .close:focus {
-			color: #000;
-			text-decoration: none;
-			cursor: pointer;
-		}
-	</style>
-</head>
-<body>
-	<audio id="audio-player" src="Musiquita.mp3"></audio>
-  	<button id="play-button">Reproducir</button>
-    <script>
-    var audio = document.getElementById("audio-player");
-    var playButton = document.getElementById("play-button");
-    
-    playButton.addEventListener("click", function() {
-      if (audio.paused) {
-        audio.play();
-        playButton.innerHTML = "Pausar 𝄞";
-      } else {
-        audio.pause();
-        playButton.innerHTML = "𝄞";
-      }
-    });
-  </script>
-	<div class="background"></div>
-	<h1 class="txtnombres">Mariana y Gustavo</h1>
-	<div class="txtfecha">07/10/2023</div>
-	<div class="txtMontserrat">¡Nos casamos!<br></div>
-	<div class="txtMontserratterciario">Estancia Las Lilas, Lujan<br>12:00hs<br></div>
-	<button class="btn-confirmar" style="margin-left: 16vh;" onclick="window.location.href='https://forms.gle/hrEZBGLNh8Ee9JZWA'">CONFIRMAR ASISTENCIA</button></div>
-	<br>
-	<button class="btn-confirmar" style="margin-left: 13vh;" onclick="window.location.href='https://goo.gl/maps/NNpzRmYRwoCQt3EN7'">COMO LLEGAR</button>
-	<button class="btn-confirmar" style="margin-left: 1cm;" onclick="document.getElementById('modal-regalos').style.display='block'">REGALOS</button>
-	
-	<div id="modal-regalos" class="modal">
-		<div class="modal-content">
-			<span class="close" onclick="document.getElementById('modal-regalos').style.display='none'">&times;</span>
-			<p> <div class="txtMontserrat"> Si deseas regalarnos algo más que tu hermosa presencia…</div><br>
-				<div class="txtMontserratsecund">CBU: 0150918601000119740160<br>ALIAS: CONDE.FAMA.BARCA<br>CAJA AHORRO ICBC: 0918/01119740/16<br>MARIANA KOHAN</div></p>
-		</div>
-	</div>
+.button {
+      background-color: rgba(255,255,255,0.6); /* Fondo traslúcido */
+      color: rgb(158, 174, 131); /* Color del texto */
+      font-size: 15px; /* Tamaño de letra */
+      font-weight: bold; /* Negrita */
+      padding: 10px 20px; /* Padding */
+      border-radius: 15px; /* Bordes redondeados */
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.4); /* Efecto sombra */
+      border: none; /* Sin borde */
+      cursor: pointer; /* Cambiar el cursor al pasar por encima */
+      margin-top: 5px; /* Margen superior */
+      margin-bottom: 5px; /* Margen inferior */
+      
+      /*Este es el boton original de GPT
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      background-color: #3cb371;
+      color: white;
+      border-radius: 15px;
+      margin: 10px; Este es el original de GPT*/
+    }
 
-	<script>
-		// Get the modal
-		var modal = document.getElementById('modal-regalos');
+    .background {
+      background-image: url("White Green Elegant Wedding Invitation.jpg");
+      background-size: 100% 100%;/*cover o contain*/
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1; /* Se aplica la opacidad solo al fondo */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Se coloca detrás del contenido */
+    }
+    .txtnombres {
+      font-size: 130px; /* Tamaño de letra */
+      font-family: 'Tangerine', cursive; /* Fuente de letra */
+      text-align: center; /* Alineación del texto */
+      margin-top: 0px; /* Margen superior */
+      margin-bottom: 15px; /* Margen inferior */
+      opacity: 1; /* La opacidad del texto no se modifica */
+      font-weight: bold;
+      color: rgb(158, 174, 131);
+      line-height: 1.5;
+    }
+    .txtfecha {
+      font-size: 95px; /* Tamaño de letra */
+      font-family: 'Tangerine', cursive; /* Fuente de letra */
+      text-align: center; /* Alineación del texto */
+      margin-top: 20px; /* Margen superior */
+      margin-bottom: 25px; /* Margen inferior */
+      opacity: 1; /* La opacidad del texto no se modifica */
+      font-weight: bold;
+      color: rgb(74, 95, 69);
+      line-height: 1.5;
+    }
+    .txtMontserrat{
+      font-size: 35px; /* Tamaño de letra */
+      font-family: 'Montserrat', normal; /* Fuente de letra */
+      text-align: center; /* Alineación del texto */
+      margin-top: 0px; /* Margen superior */
+      margin-bottom: 35px; /* Margen inferior */
+      opacity: 1; /* La opacidad del texto no se modifica */
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      line-height: 1.5;
+    }
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-	</script>
-</body>
-</html>
+.txtMontserratsecund{
+      font-size: 25px; /* Tamaño de letra */
+      font-family: 'Montserrat', normal; /* Fuente de letra */
+      text-align: center; /* Alineación del texto */
+      margin-top: 20px; /* Margen superior */
+      margin-bottom: 35px; /* Margen inferior */
+      opacity: 1; /* La opacidad del texto no se modifica */
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      line-height: 1.5;
+    }
+    .txtMontserratterciario{
+      font-size: 20px; /* Tamaño de letra */
+      font-family: 'Montserrat', normal; /* Fuente de letra */
+      text-align: center; /* Alineación del texto */
+      margin-top: 20px; /* Margen superior */
+      margin-bottom: 40px; /* Margen inferior */
+      opacity: 1; /* La opacidad del texto no se modifica */
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      line-height: 1.5;
