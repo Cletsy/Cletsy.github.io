@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Imagenes/Logo1.ico">
+    <title>Página de invitación de boda</title>
+    <link rel="stylesheet" href="estilospc.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+<body>
+    <audio src="Musiquita.mp3" controls></audio>
+    <div class="containterfondo">
+        <div class="fondo"></div></div>
+    <div class="containertextos">
+        <div class="content">
+          <p class="nombres">Mariana y Gustavo</p>
+          <p class="fechaboda">07/10/2023</p>
+          <p class="texto1">¡Nos casamos!</p>
+          <p class="texto2">Estancia Las Lilas, Lujan</p>
+          <p class="texto3">12:00 hs</p><br>
+          <p><a class="boton1" href="https://forms.gle/hrEZBGLNh8Ee9JZWA">CONFIRMAR ASISTENCIA</a></p><br><br>
+          <p><a class="boton2" href="https://goo.gl/maps/K2z88W3q4W5YRyhq6">COMO LLEGAR</a></p><br><br>
+          <p><a class="boton3" href="#"onclick="mostrarPopup()">REGALOS</a></p>
+        </div>
+      </div>
+        <div class="overlay" onclick="ocultarPopup()"></div>
+  <div class="popup" id="popup">
+    <p><img src="Imagenes/Regalito.png" height="50px" width="50px"></p>
+    <p><div class="texto4"> Si deseas regalarnos algo más que tu hermosa presencia…
+     </div>
+    <p><div class="texto5">CBU: 0150918601000119740160</p>
+    <p><div class="texto5">ALIAS: CONDE.FAMA.BARCA</p>
+    <p><div class="texto5">CAJA AHORRO ICBC: 0918/01119740/16</p>
+    <p><div class="texto5">MARIANA KOHAN</p>
+  </div>
+      
+      <script>
+        function mostrarPopup() {
+          var popup = document.getElementById('popup');
+          var overlay = document.querySelector('.overlay');
+          popup.classList.add('active');
+          overlay.classList.add('active');
+        }
+          function ocultarPopup() {
+          var popup = document.getElementById('popup');
+          var overlay = document.querySelector('.overlay');
+          popup.classList.remove('active');
+          overlay.classList.remove('active');
+        }
+      </script>
+</body>
+</html>
